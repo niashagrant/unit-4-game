@@ -1,0 +1,68 @@
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgb(155, 88, 97)
+    ),
+    url("https://wallpapermemory.com/uploads/717/geometry-background-hd-1920x1200-116779.jpg");
+}
+
+#crystalTitle {
+  color: #293b58;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#randomNum {
+  margin-top: 2%;
+  color: #293b58;
+}
+
+.card {
+  text-align: center;
+}
+
+.randomNum {
+  color: #293b58;
+  border: 15px solid;
+  border-top-color: rgb(196, 120, 133);
+  border-right-color: rgb(196, 120, 133);
+  border-bottom-color: rgb(155, 88, 97);
+  border-left-color: rgb(155, 88, 97);
+  background-color: rgb(231, 150, 151);
+}
+
+.crystal {
+  margin: 3% 20%;
+}
+
+.instructions {
+  color: #293b58;
+  margin: 3% 25%;
+  border: round;
+}
+
+.yourScore {
+  margin: 3% 30%;
+}
+
+hr {
+  border: rgba(29, 9, 148, 0.3) dashed 2px;
+}
+
+#winOrLose {
+  margin: 1% 35%;
+}
+
+img {
+  height: 120px;
+  width: 130px;
+}
+
+#totalScore {
+  margin-top: 3%;
+  font-size: 40px;
+  font-weight: bold;
+}
