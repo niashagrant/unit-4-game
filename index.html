@@ -17,9 +17,18 @@
     <div class="card-body text-center display-1" id="crystalTitle">
       Crystal Collector
     </div>
-
-    <div class="card-title text-center display-4 " id="randomNum">
-      Magical crystal number: <span class="randomNum display-4"></span>
+    <div class="card-title text-center">
+      <div class="instructions">
+        <h2>Instructions:</h2>
+        <p>
+          Each crystal has a value that is hidden. It will only be displayed
+          once clicked. Each time a crystal is clicked, the crystal's value will
+          be added to the crystal pouch. The game will be won only if the number
+          of crystal in the crystal pouch matches the crystal number, and if the
+          number of crystal in the crystal pouch is exceeded the game will be
+          lost. The game restarts automatically. Good luck!
+        </p>
+      </div>
     </div>
 
     <div class="container crystal">
@@ -59,24 +68,15 @@
       </div>
     </div>
 
-    <div class="card-title text-center">
-      <div class="instructions">
-        <h2>Instructions:</h2>
-        <p>
-          Each crystal has a value that is hidden. It will only be displayed
-          once clicked. Each time a crystal is clicked, the crystal's value will
-          be added to the magical crystal pouch. The game will be won only if
-          the number of crystal in the crystal pouch matches the magic number,
-          and if the number of crystal in the crystal pouch is exceeded the game
-          will be lost. The game restarts automatically. Good luck!
-        </p>
-      </div>
+    <div class="card-title text-center display-4 " id="randomNum">
+      Crystal number: <span class="randomNum display-4"></span>
     </div>
+
     <div class="yourScore">
       <h3 class="card-title text-center ">
         There are
         <span id="totalScore"></span>
-        in the magical crystal pouch!
+        in the crystal pouch!
       </h3>
 
       <div class="col-lg-4 button" id="winOrLose">

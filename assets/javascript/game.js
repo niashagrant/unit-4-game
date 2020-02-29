@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // makes random number
   var randomNum = Math.floor(Math.random() * 110) + 20;
   $(".randomNum").html(randomNum);
   var gem1 = Math.floor(Math.random() * 12);
@@ -9,9 +10,13 @@ $(document).ready(function() {
   console.log(gem2);
   console.log(gem3);
   console.log(gem4);
+
+  // inital scores
   var yourWins = 0;
   var yourLosses = 0;
   var totalScore = 0;
+
+  //  keeps track of if you win or loose
   $("#totalScore").text(totalScore);
   function numberOfWins() {
     yourWins = yourWins + 1;
@@ -21,6 +26,9 @@ $(document).ready(function() {
     yourLosses = yourLosses + 1;
     $("#yourLosses").text(yourLosses);
   }
+
+  // adds the gem numbers together to reach the totalScore and alerts if you win, loose, or to reset the score
+
   $("#gem1").click(function() {
     totalScore = totalScore + gem1;
     $("#totalScore").text(totalScore);
@@ -73,6 +81,9 @@ $(document).ready(function() {
       resetGemNum();
     }
   });
+
+  // resets the random crystal number that has to reached and makes the gems added back to 0
+
   function resetTotalScore() {
     totalScore = 0;
     $("#totalScore").text(totalScore);
